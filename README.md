@@ -1,5 +1,20 @@
-# mamba_sleep
-PyTorch implementation of MambaSleep, a selective state space architecture for automated sleep staging using 1 EEG, 1 EOG, and 1 EMG channel. Includes preprocessing scripts, model architectures based on selective state spaces, and evaluation tools for standard benchmark datasets. XML parses is for Compumedics Profusion studies.
+# MambaSleep
+
+PyTorch implementation of MambaSleep, a selective state space architecture designed for joint automated sleep staging using 1 EEG, 1 EOG, and 1 EMG channel and arousal detection using 1 EEG, 1 EOG, 1 EMG and the ECG channel.
+
+## Overview
+
+MambaSleep leverages selective state space models (S4/Mamba) to process multi-channel polysomnography (PSG) data. The architecture captures long-range temporal dependencies required for sequence-to-sequence sleep scoring and transient micro-arousal identification.
+
+This repository includes data parsing for Compumedics Profusion study annotations, feature preprocessing, model definitions, and evaluation pipelines.
+
+## Key Features
+
+Selective State Space Architecture: High-efficiency sequence modeling optimized for continuous PSG signals.
+Dual Task Support: Pipelines for both 5-stage sleep classification (AASM rules) and continuous cortical arousal detection.
+Standardised 3-Channel Input: Built for 1 EEG, 1 EOG, and 1 EMG channel configurations.
+Compumedics Profusion Parser: Automated extraction and alignment of signal data and XML annotation files.
+Evaluation Metrics: Standardized reporting for epoch-level accuracy, macro F1, Cohen's kappa (staging), and AUPRC/AUROC (arousals).
 
 Installation Prerequisites
 
