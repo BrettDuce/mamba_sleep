@@ -20,7 +20,7 @@ Compumedics Profusion Parser: Automated extraction and alignment of signal data 
 
 Evaluation Metrics: Standardized reporting for epoch-level accuracy, macro F1, Cohen's kappa (staging), and AUPRC/AUROC (arousals).
 
-Installation Prerequisites
+## Installation Prerequisites
 
 Python 3.10+
 
@@ -29,7 +29,7 @@ CUDA-compatible GPU
 PyTorch 2.0+
 
 
-Setup
+## Setup
 Clone the repository:
 
 ```Bash
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ```
 Note: Ensure causal-conv1d and mamba-ssm are installed correctly for your specific CUDA version.
 
-Usage
+## Usage
 
 1. Data Preparation
 
@@ -77,7 +77,7 @@ Run evaluation on a pre-trained checkpoint:
 python scripts/evaluate.py --checkpoint /path/to/model.pt --test_data ./processed_data/test/
 ```
 
-Citation
+## Citation
 If you use this codebase in your research, please cite:
 
 Code snippet
