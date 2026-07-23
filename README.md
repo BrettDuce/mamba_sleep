@@ -22,11 +22,11 @@ Evaluation Metrics: Standardized reporting for epoch-level accuracy, macro F1, C
 
 ## Installation Prerequisites
 
-Python 3.10+
+`Python 3.10+
 
-CUDA-compatible GPU
+`CUDA-compatible GPU
 
-PyTorch 2.0+
+`PyTorch 2.0+
 
 
 ## Setup
