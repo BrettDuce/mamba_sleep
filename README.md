@@ -2,8 +2,11 @@
 PyTorch implementation of MambaSleep, a selective state space architecture for automated sleep staging using 1 EEG, 1 EOG, and 1 EMG channel. Includes preprocessing scripts, model architectures based on selective state spaces, and evaluation tools for standard benchmark datasets. XML parses is for Compumedics Profusion studies.
 
 Installation Prerequisites
+
 Python 3.10+
+
 CUDA-compatible GPU
+
 PyTorch 2.0+
 
 Setup
