@@ -35,6 +35,7 @@ Note: Ensure causal-conv1d and mamba-ssm are installed correctly for your specif
 Usage
 
 1. Data Preparation
+
 Prepare your raw EDF files into preprocessed NumPy array formats:
 
 ```Bash
@@ -42,6 +43,7 @@ python scripts/preprocess.py --data_dir /path/to/raw_edf/ --output_dir ./process
 ```
 
 2. Training
+
 Train the model using a configuration file:
 
 ```Bash
@@ -49,6 +51,7 @@ python scripts/train.py --config configs/mamba_sleep_base.yaml
 ```
 
 3. Evaluation
+
 Run evaluation on a pre-trained checkpoint:
 
 ```Bash
