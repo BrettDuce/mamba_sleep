@@ -13,9 +13,9 @@ PyTorch 2.0+
 Setup
 Clone the repository:
 
-Bash
+```Bash
 git clone [https://github.com/your-username/mamba_sleep.git](https://github.com/your-username/mamba_sleep.git)
-cd mamba_sleep
+cd mamba_sleep```
 
 Create and activate a virtual environment:
 
