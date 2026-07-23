@@ -11,9 +11,13 @@ This repository includes data parsing for Compumedics Profusion study annotation
 ## Key Features
 
 Selective State Space Architecture: High-efficiency sequence modeling optimized for continuous PSG signals.
+
 Dual Task Support: Pipelines for both 5-stage sleep classification (AASM rules) and continuous cortical arousal detection.
+
 Standardised 3-Channel Input: Built for 1 EEG, 1 EOG, and 1 EMG channel configurations.
+
 Compumedics Profusion Parser: Automated extraction and alignment of signal data and XML annotation files.
+
 Evaluation Metrics: Standardized reporting for epoch-level accuracy, macro F1, Cohen's kappa (staging), and AUPRC/AUROC (arousals).
 
 Installation Prerequisites
