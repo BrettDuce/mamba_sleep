@@ -15,18 +15,21 @@ Clone the repository:
 
 ```Bash
 git clone [https://github.com/your-username/mamba_sleep.git](https://github.com/your-username/mamba_sleep.git)
-cd mamba_sleep```
+cd mamba_sleep
+```
 
 Create and activate a virtual environment:
 
-Bash
+```Bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 Install required dependencies:
 
-Bash
+```Bash
 pip install -r requirements.txt
+```
 Note: Ensure causal-conv1d and mamba-ssm are installed correctly for your specific CUDA version.
 
 Usage
@@ -34,20 +37,23 @@ Usage
 1. Data Preparation
 Prepare your raw EDF files into preprocessed NumPy array formats:
 
-Bash
+```Bash
 python scripts/preprocess.py --data_dir /path/to/raw_edf/ --output_dir ./processed_data/
+```
 
 2. Training
 Train the model using a configuration file:
 
-Bash
+```Bash
 python scripts/train.py --config configs/mamba_sleep_base.yaml
+```
 
 3. Evaluation
 Run evaluation on a pre-trained checkpoint:
 
-Bash
+```Bash
 python scripts/evaluate.py --checkpoint /path/to/model.pt --test_data ./processed_data/test/
+```
 
 Citation
 If you use this codebase in your research, please cite:
